@@ -3,34 +3,25 @@ import {Component} from '@angular/core';
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'sandbox',
-  template: `
-    <h1>{{name}} is {{age}} years old.</h1>
-    <h2>My name is {{person.firstName}} {{person.lastName}}</h2>
-    <ul>
-      <li>{{'Hello World'}}</li>
-      <li>{{1 + 1}}</li>
-      <li>{{showAge()}}</li>
-    </ul>
-  `
+  template: `<h1>Hello World</h1>`
 })
 
 export class SandboxComponent {
-  name = 'Michael Miles';
-  age = 53;
-  person = {firstName: 'Steve', lastName: 'Smith'};
+  name: string = 'Michael Miles';
+  age: number = 55;
+  hasChildren: boolean = true;
+  city: any = 'Boston';
+  myNumbersArray: number[] = [1, 2, 3];
+  myStringsArray: string[] = ['Michael', 'Miles'];
+  myAnyArray: any[] = [1, 2, 3, 'Hello', 'World'];
+  myTuple: [string, number] = ['Michael', 55];
+  unusable: void = undefined;
+  u: undefined = undefined;
+  n: null = null;
 
   constructor() {
-    console.log('Constructor ran...');
-    // this.age = 55;
-    this.hasBirthDay();
-    this.hasBirthDay();
-  }
-
-  hasBirthDay() {
-    this.age += 1;
-  }
-
-  showAge() {
-    return this.age;
+    this.myNumbersArray = [1, 2];
+    this.myStringsArray = ['Bob', 'Neubauer'];
   }
 }
+
