@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {Customer} from './Customer';
+
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -7,21 +9,13 @@ import {Component} from '@angular/core';
 })
 
 export class SandboxComponent {
-  name: string = 'Michael Miles';
-  age: number = 55;
-  hasChildren: boolean = true;
-  city: any = 'Boston';
-  myNumbersArray: number[] = [1, 2, 3];
-  myStringsArray: string[] = ['Michael', 'Miles'];
-  myAnyArray: any[] = [1, 2, 3, 'Hello', 'World'];
-  myTuple: [string, number] = ['Michael', 55];
-  unusable: void = undefined;
-  u: undefined = undefined;
-  n: null = null;
+  customer: Customer;
 
   constructor() {
-    this.myNumbersArray = [1, 2];
-    this.myStringsArray = ['Bob', 'Neubauer'];
+    this.customer = {
+      id: 1,
+      name: 'John Doe',
+      email: 'John@gmail.com'
+    };
   }
 }
-
