@@ -8,9 +8,11 @@ import {Component} from '@angular/core';
 })
 
 export class SandboxComponent {
+  // An array of strings
   people = ['Rick', 'Daryl', 'Carl', 'Glen'];
 
   people2 = [
+    // An array of objects
     {
       firstName: 'Rick',
       lastName: 'Miles'
