@@ -12,7 +12,7 @@ export class SandboxComponent {
 
   people2 = [
     {
-      firstName: 'Rick',
+      firstName: 'Dan',
       lastName: 'Miles'
     },
 
@@ -27,7 +27,7 @@ export class SandboxComponent {
     },
 
     {
-      firstName: 'Mike',
+      firstName: 'Sue',
       lastName: 'Miles'
     },
 
